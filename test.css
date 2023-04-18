@@ -1,0 +1,50 @@
+.grid{
+    display: grid;
+    grid-template-areas: 
+    'a c c d e'
+    'b c c d e';
+    gap: 1ex;
+}
+
+
+.item-1{
+    background-color: aqua;
+    grid-area: a;
+}
+.item-2{
+    background-color: aqua;
+    grid-area: b;
+}
+.item-3{
+    background-color: aqua;
+    grid-area: c;
+}
+.item-4{
+    background-color: aqua;
+    grid-area: d;
+}
+.item-5{
+    background-color: aqua;
+    grid-area: e;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5{
+    display: flex;
+     align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+
+.diamond{
+    background-color: white;
+    width:1em;
+    height:1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip{
+    display: none;
+}

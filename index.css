@@ -1,0 +1,57 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "item1 item3 item3 item4 item5"
+    "item2 item3 item3 item4 item5";
+  gap: 1em;
+}
+
+.item:nth-child(1) {
+  grid-area: item1;
+  background-color: blue;
+}
+
+.item:nth-child(2) {
+  grid-area: item2;
+  background-color: rgb(106, 41, 92);
+}
+
+.item:nth-child(3) {
+  grid-area: item3;
+  background-color: rgb(34, 132, 93);
+}
+
+.item:nth-child(4) {
+  grid-area: item4;
+  background-color: rgb(223, 114, 59);
+}
+
+.item:nth-child(5) {
+  grid-area: item5;
+  background-color: rgb(193, 68, 137);
+}
+.tooltip {
+  display: none;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.diamond {
+  background-color: white;
+  height: 1em;
+  width: 1em;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diamond p {
+  transform: rotate(-45deg);
+}
+
